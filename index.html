@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+    <form id="resume-form">
+        <h1>Shareable Resume Builder</h1> 
+    <fieldset>
+        <div class="wow">Personal Information</div>
+    
+        <label for="username">Username :</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+         
+        <label for="name">Name :</label>
+        <input type="text" id="name" placeholder="Enter your Name" required>
+    
+        <label for="email">Email :</label>
+        <input type="email" id="email" placeholder="Enter your Email" required>
+    
+        <label for="phone">Phone :</label>
+        <input type="phone" id="phone" placeholder="Enter your phone number" required>
+    </fieldset>
+    
+    <fieldset>
+        <div class="wow2">Education</div>
+        <textarea id="education" placeholder="Enter your Education" rows="6" required></textarea>
+      
+    
+     <div class="wow3">Experience</div>
+         <textarea id="experience" placeholder="Enter your Experience" rows="6" required></textarea>
+     
+    
+     <div class="wow4">Skills</div>
+         <textarea id="skills" placeholder="Enter your Skills" rows="6" required></textarea>
+    </fieldset>
+    
+    <button type="submit"> <b>Generate Resume</b></button>
+    
+       </form>
+    
+   <br>
+
+   <div id="resume-display" contenteditable="true">
+
+   </div>
+   <br>
+   <div id="shareable-link-container">
+    <h2>Shareable link</h2>
+    <p>click below to view or edit your resume :</p>
+     <a href="#" id="shareable-link" target="_blank"></a>
+    <br>
+    <button id="download-pdf"><b>Download as PDF</b></button>
+   </div>
+
+   <script src="main.js"></script>
+
+  
+</body>
+</html>
